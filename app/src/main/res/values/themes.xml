@@ -24,4 +24,12 @@
         <item name="hintTextColor">?attr/colorOnSurface</item>
     </style>
 
+    <style name="Theme.TaxiApp.Splash" parent="Theme.TaxiApp">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowDisablePreview">false</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
 </resources>
