@@ -7,10 +7,10 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <com.google.android.material.appbar.MaterialToolbar
+    <!--<com.google.android.material.appbar.MaterialToolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         style="@style/Theme.TaxiApp.Toolbar"
-        app:title="@string/app_name"/>
+        app:title="@string/app_name"/>-->
 
 </LinearLayout>

@@ -4,10 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/usuario/AndroidStudioProjects/TaxiApp/app/src/main/res/drawable/backward.xml" value="0.236" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/TaxiApp/app/src/main/res/drawable/fmd_good.xml" value="0.236" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/TaxiApp/app/src/main/res/drawable/login_card.xml" value="0.236" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/TaxiApp/app/src/main/res/drawable/logout.xml" value="0.236" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/TaxiApp/app/src/main/res/drawable/splash.xml" value="0.109" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/TaxiApp/app/src/main/res/layout/activity_login.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/TaxiApp/app/src/main/res/layout/activity_main.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/TaxiApp/app/src/main/res/layout/item.xml" value="0.24547101449275363" />
       </map>
     </option>
   </component>

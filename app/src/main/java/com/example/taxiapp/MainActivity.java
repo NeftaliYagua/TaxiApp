@@ -31,4 +31,6 @@ public class MainActivity extends AppCompatActivity {
             }
         };
     }
+
+    @Override protected void onStart(){firebaseAuth.addAuthStateListener(authStateListener);super.onStart();}
 }

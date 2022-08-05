@@ -23,8 +23,8 @@
         tools:ignore="RelativeOverlap" />
 
     <ImageView android:id="@+id/login_image"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:contentDescription="@string/sign_up"
         android:src="@mipmap/user"
         android:layout_centerHorizontal="true"
@@ -95,10 +95,10 @@
     </LinearLayout>
 
     <com.google.android.gms.common.SignInButton
-        android:layout_below="@id/login_card"
-        android:layout_centerHorizontal="true"
         android:id="@+id/google_sign_in_button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_card"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
