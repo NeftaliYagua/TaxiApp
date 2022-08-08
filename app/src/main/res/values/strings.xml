@@ -10,7 +10,7 @@
     <string name="user_not_found">User not found!</string>
     <string name="google_user">This account uses Google Sign In</string>
     <string name="main_map_title">Show taxis on the map</string>
-    <string name="main_map_subtitle">Here you find the vehicles that circulate in the city.</string>
+    <string name="main_map_description">Here you find the vehicles that circulate in the city.</string>
     <string name="go_to_the_map">Go to the map</string>
-
+    <string name="logout">Logout</string>
 </resources>

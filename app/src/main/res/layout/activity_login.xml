@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/pasto"
     android:id="@+id/activity_login">
 
     <ImageButton android:id="@+id/btn_close"
@@ -30,13 +29,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"/>
 
+
     <LinearLayout android:id="@+id/login_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/login_image"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/login_card"
+        android:background="@color/canary"
         android:orientation="vertical"
         android:padding="40dp">
 

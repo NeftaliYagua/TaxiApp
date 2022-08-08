@@ -1,5 +1,7 @@
 package com.example.taxiapp;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -30,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         };
+
+        /*RecyclerView recyclerView = findViewById(R.id.public_menu);
+        PublicMenuAdapter adapter = new PublicMenuAdapter(this);
+        recyclerView.setAdapter(adapter);*/
     }
 
     @Override protected void onStart(){firebaseAuth.addAuthStateListener(authStateListener);super.onStart();}

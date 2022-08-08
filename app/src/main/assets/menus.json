@@ -1,0 +1,4 @@
+[
+  {"title": "main_map_title", "description": "main_map_description", "image": "R.mipmap.map_location"},
+  {"title": "Logout", "description": "Logout", "image": "R.mipmap.logout"}
+]
