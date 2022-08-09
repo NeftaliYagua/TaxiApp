@@ -1,5 +1,7 @@
 package com.example.taxiapp;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -33,10 +35,11 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-        /*RecyclerView recyclerView = findViewById(R.id.public_menu);
+        RecyclerView recyclerView = findViewById(R.id.public_menu);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
         PublicMenuAdapter adapter = new PublicMenuAdapter(this);
-        recyclerView.setAdapter(adapter);*/
+        recyclerView.setAdapter(adapter);
     }
 
-    @Override protected void onStart(){firebaseAuth.addAuthStateListener(authStateListener);super.onStart();}
+    //@Override protected void onStart(){firebaseAuth.addAuthStateListener(authStateListener);super.onStart();}
 }
