@@ -3,10 +3,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.GridLayout;
+
 import com.example.taxiapp.entity.User;
 import com.example.taxiapp.login.LoginActivity;
 import com.google.firebase.auth.FirebaseAuth;
@@ -34,11 +35,9 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         };
+        GridLayout container = findViewById(R.id.menu_container);
 
-        RecyclerView recyclerView = findViewById(R.id.public_menu);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        PublicMenuAdapter adapter = new PublicMenuAdapter(this);
-        recyclerView.setAdapter(adapter);
+        
     }
 
     //@Override protected void onStart(){firebaseAuth.addAuthStateListener(authStateListener);super.onStart();}

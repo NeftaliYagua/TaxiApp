@@ -5,11 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
+    <GridLayout android:id="@+id/menu_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:id="@+id/public_menu"/>
-
+        android:columnCount="@integer/two"
+        android:rowCount="@integer/two"
+        tools:ignore="UselessParent"
+        android:useDefaultMargins="true"/>
 </RelativeLayout>
