@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 32
 
     defaultConfig {
         applicationId "com.example.taxiapp"
         minSdk 21
-        targetSdk 31
+        targetSdk 32
         versionCode 1
         versionName "1.0"
 
@@ -26,11 +26,16 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    namespace 'com.example.taxiapp'
+
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.6.1'
 
     implementation 'com.sun.mail:android-mail:1.6.2'
@@ -39,7 +44,7 @@ dependencies {
 
     implementation 'com.google.dagger:dagger:2.40.3'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.40.3'
-    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+    implementation 'com.google.android.gms:play-services-auth:20.3.0'
 
     implementation platform('com.google.firebase:firebase-bom:29.3.0')
 
@@ -47,7 +52,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore'
 
     implementation 'com.github.bumptech.glide:glide:4.12.0'
-    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+    implementation 'com.google.android.gms:play-services-auth:20.3.0'
     implementation "com.airbnb.android:lottie:4.2.2"
 
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'

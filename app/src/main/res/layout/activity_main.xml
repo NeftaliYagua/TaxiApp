@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
     <GridLayout android:id="@+id/menu_container"
@@ -11,5 +12,11 @@
         android:columnCount="@integer/two"
         android:rowCount="@integer/two"
         tools:ignore="UselessParent"
-        android:useDefaultMargins="true"/>
+        android:useDefaultMargins="true">
+
+        <include layout="@layout/item"
+            app:title="@string/main_map_title"
+            app:description="@string/main_map_description" />
+
+    </GridLayout>
 </RelativeLayout>
