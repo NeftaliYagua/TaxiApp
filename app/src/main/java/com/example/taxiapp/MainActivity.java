@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         GridLayout container = findViewById(R.id.menu_container);
-
     }
 
     //@Override protected void onStart(){firebaseAuth.addAuthStateListener(authStateListener);super.onStart();}

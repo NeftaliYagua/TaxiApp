@@ -46,23 +46,6 @@
                     android:textColor="?android:attr/textColorSecondary" />
             </LinearLayout>
 
-            <!-- Buttons
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:orientation="horizontal">
-
-                <com.google.android.material.button.MaterialButton
-                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:text="@string/go_to_the_map"
-                    android:id="@+id/card_action_button"/>
-
-            </LinearLayout>-->
-
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
