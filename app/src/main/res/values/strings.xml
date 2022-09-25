@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TaxiApp</string>
+    <string name="app_name" translatable="false">TaxiApp</string>
     <string name="sign_up">Sign Up</string>
     <string name="login">Login</string>
     <string name="password">Password</string>
@@ -9,8 +9,11 @@
     <string name="invalid_email">Invalid E-Mail Address</string>
     <string name="user_not_found">User not found!</string>
     <string name="google_user">This account uses Google Sign In</string>
-    <string name="main_map_title">Show taxis on the map</string>
+    <string name="main_map_title">Taxis on the map</string>
+    <string name="main_driver_title">Search a driver</string>
+    <string name="main_call_center_title">Call Center</string>
+    <string name="main_profile_title">My Profile</string>
     <string name="main_map_description">Here you find the vehicles that circulate in the city.</string>
-    <string name="go_to_the_map">Go to the map</string>
+    <string name="main_menu_description">Here we offer you multiple options so you can find a taxi quickly.</string>
     <string name="logout">Logout</string>
 </resources>

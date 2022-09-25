@@ -1,0 +1,18 @@
+<resources>
+    <string name="sign_up">Regístrate</string>
+    <string name="login">Acceder</string>
+    <string name="password">Contraseña</string>
+    <string name="forgot_your_password">¿Olvidaste tu contraseña?</string>
+    <string name="go_back">Ir atrás</string>
+    <string name="required_field">¡Este campo es requerido!</string>
+    <string name="invalid_email">Dirección de correo no válida</string>
+    <string name="user_not_found">¡Usuario no encontrado!</string>
+    <string name="google_user">Esta cuenta utiliza el Inicio de Sesión de Google</string>
+    <string name="main_map_title">Taxis en el mapa</string>
+    <string name="main_driver_title">Buscar un conductor</string>
+    <string name="main_call_center_title">Atención al cliente</string>
+    <string name="main_profile_title">Mi Perfil</string>
+    <string name="main_map_description">Aquí encuentras los vehículos que circulan en esta ciudad.</string>
+    <string name="main_menu_description">Aquí te ofrecemos múltiples opciones para que puedas encontrar un taxi rápidamente.</string>
+    <string name="logout">Cerrar Sesión</string>
+</resources>
