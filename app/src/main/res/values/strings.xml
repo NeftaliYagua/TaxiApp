@@ -2,6 +2,7 @@
     <string name="app_name" translatable="false">TaxiApp</string>
     <string name="sign_up">Sign Up</string>
     <string name="login">Login</string>
+    <string name="email">E-Mail</string>
     <string name="password">Password</string>
     <string name="forgot_your_password">Forgot your password?</string>
     <string name="go_back">Go Back</string>

@@ -1,5 +1,7 @@
 package com.example.taxiapp;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
@@ -14,7 +16,6 @@ public class MainActivity extends AppCompatActivity implements MainFragment.OnFr
     @Inject FirebaseFirestore firebaseFirestore;
     @Inject SharedPreferences preferences;
     @Inject FirebaseAuth firebaseAuth;
-    MainFragment mainFragment;
     FirebaseAuth.AuthStateListener authStateListener;
     private User user;
 
@@ -31,8 +32,11 @@ public class MainActivity extends AppCompatActivity implements MainFragment.OnFr
                 finish();
             }
         };*/
-        mainFragment = new MainFragment();
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragments_container,mainFragment).commit();
+        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
+        if(navHostFragment != null) {
+            NavController navController = navHostFragment.getNavController();
+
+        }
     }
 
     @Override

@@ -1,4 +1,5 @@
 <resources>
+    <string name="email">E-Mail</string>
     <string name="sign_up">Regístrate</string>
     <string name="login">Acceder</string>
     <string name="password">Contraseña</string>
@@ -7,7 +8,7 @@
     <string name="required_field">¡Este campo es requerido!</string>
     <string name="invalid_email">Dirección de correo no válida</string>
     <string name="user_not_found">¡Usuario no encontrado!</string>
-    <string name="google_user">Esta cuenta utiliza el Inicio de Sesión de Google</string>
+    <string name="google_user">Esta utiliza el Inicio de Sesión de Google</string>
     <string name="main_map_title">Taxis en el mapa</string>
     <string name="main_driver_title">Buscar un conductor</string>
     <string name="main_call_center_title">Atención al cliente</string>

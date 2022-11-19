@@ -1,5 +1,4 @@
 package com.example.taxiapp.ui.fragment;
-
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,10 +7,11 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 
 import com.example.taxiapp.R;
 
@@ -44,19 +44,14 @@ public class MainFragment extends Fragment implements View.OnClickListener{
     }
 
     @Override
-    public void onClick(View v) {
-        /*switch (v.getId()) {
-            case R.id.mnu_triki:
+    public void onClick(View view) {
 
+        switch (view.getId()) {
+            case R.id.mnu_map:
+                NavDirections action = MainFragmentDirections.actionMainFragmentToMapsFragment();
+                Navigation.findNavController(view).navigate(action);
                 break;
-            case R.id.mnu_completing:
-
-                break;
-            case R.id.mnu_hunting:
-                break;
-            case R.id.mnu_tutorials:
-                break;
-        }*/
+        }
     }
 
     public interface OnFragmentInteractionListener {

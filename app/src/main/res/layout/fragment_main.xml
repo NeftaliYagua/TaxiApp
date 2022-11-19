@@ -1,173 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="?attr/colorSecondary">
 
-    <ImageView android:id="@+id/cover_image"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:src="@mipmap/cover_image"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/main_map_description"/>
-
-    <TextView android:id="@+id/main_menu_description"
+    <LinearLayout android:id="@+id/main_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/main_menu_description"
-        android:layout_marginHorizontal="@dimen/twenty"
-        android:layout_below="@+id/cover_image"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold|italic"/>
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:ignore="UseCompoundDrawables"
+        android:padding="@dimen/twenty">
 
-    <androidx.gridlayout.widget.GridLayout
-        android:id="@+id/menu_container"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/main_menu_description"
-        android:layout_centerHorizontal="true"
-        app:columnCount="@integer/two"
-        app:rowCount="@integer/two"
-        app:useDefaultMargins="true">
+        <ImageView android:id="@+id/cover_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/cover_image"
+            android:contentDescription="@string/main_map_description"/>
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/mnu_map"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            app:cardElevation="@dimen/cardview_default_elevation"
-            app:cardCornerRadius="@dimen/eight"
-            android:foreground="?attr/selectableItemBackground"
-            android:layout_margin="10dp"
-            android:clickable="true"
-            android:focusable="true">
+        <TextView android:id="@+id/main_menu_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_menu_description"
+            android:layout_marginHorizontal="@dimen/twenty"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_gravity="center">
+    </LinearLayout>
 
-                <ImageView android:layout_width="@dimen/one_hundred"
-                    android:layout_height="@dimen/one_hundred"
-                    app:srcCompat="@mipmap/map_location"
-                    android:scaleType="centerCrop"
-                    android:contentDescription="@string/main_map_description" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_header"
+        android:background="@color/white">
 
-                <TextView android:layout_width="wrap_content"
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/menu_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:columnCount="@integer/two"
+            app:rowCount="@integer/two"
+            app:useDefaultMargins="true">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mnu_map"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:cardCornerRadius="@dimen/eight"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/main_map_title"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textAlignment="center"/>
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center">
 
-            </LinearLayout>
+                    <ImageView android:layout_width="@dimen/one_hundred"
+                        android:layout_height="@dimen/one_hundred"
+                        app:srcCompat="@mipmap/map_location"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/main_map_description" />
 
-        </com.google.android.material.card.MaterialCardView>
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/main_map_title"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textAlignment="center"/>
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/mnu_call"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            app:cardElevation="@dimen/cardview_default_elevation"
-            app:cardCornerRadius="@dimen/eight"
-            android:foreground="?attr/selectableItemBackground"
-            android:layout_margin="10dp"
-            android:clickable="true"
-            android:focusable="true">
+                </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_gravity="center">
+            </com.google.android.material.card.MaterialCardView>
 
-                <ImageView android:layout_width="@dimen/one_hundred"
-                    android:layout_height="@dimen/one_hundred"
-                    app:srcCompat="@mipmap/driver"
-                    android:scaleType="centerCrop"
-                    android:contentDescription="@string/main_map_description" />
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mnu_call"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:cardCornerRadius="@dimen/eight"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true">
 
-                <TextView android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/main_driver_title"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textAlignment="center"/>
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center">
 
-            </LinearLayout>
+                    <ImageView android:layout_width="@dimen/one_hundred"
+                        android:layout_height="@dimen/one_hundred"
+                        app:srcCompat="@mipmap/driver"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/main_map_description" />
 
-        </com.google.android.material.card.MaterialCardView>
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/main_driver_title"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textAlignment="center"/>
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/mnu_q"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            app:cardElevation="@dimen/cardview_default_elevation"
-            app:cardCornerRadius="@dimen/eight"
-            android:foreground="?attr/selectableItemBackground"
-            android:layout_margin="10dp"
-            android:clickable="true"
-            android:focusable="true">
+                </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_gravity="center">
+            </com.google.android.material.card.MaterialCardView>
 
-                <ImageView android:layout_width="@dimen/one_hundred"
-                    android:layout_height="@dimen/one_hundred"
-                    app:srcCompat="@mipmap/call_center_office"
-                    android:scaleType="centerCrop"
-                    android:contentDescription="@string/main_call_center_title" />
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mnu_q"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:cardCornerRadius="@dimen/eight"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true">
 
-                <TextView android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/main_call_center_title"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textAlignment="center"/>
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center">
 
-            </LinearLayout>
+                    <ImageView android:layout_width="@dimen/one_hundred"
+                        android:layout_height="@dimen/one_hundred"
+                        app:srcCompat="@mipmap/call_center_office"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/main_call_center_title" />
 
-        </com.google.android.material.card.MaterialCardView>
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/main_call_center_title"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textAlignment="center"/>
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/mnu_l"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            app:cardElevation="@dimen/cardview_default_elevation"
-            app:cardCornerRadius="@dimen/eight"
-            android:foreground="?attr/selectableItemBackground"
-            android:layout_margin="10dp"
-            android:clickable="true"
-            android:focusable="true">
+                </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_gravity="center">
+            </com.google.android.material.card.MaterialCardView>
 
-                <ImageView android:layout_width="@dimen/one_hundred"
-                    android:layout_height="@dimen/one_hundred"
-                    app:srcCompat="@mipmap/profile"
-                    android:scaleType="centerCrop"
-                    android:contentDescription="@string/main_profile_title" />
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mnu_l"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                app:cardCornerRadius="@dimen/eight"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true">
 
-                <TextView android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/main_profile_title"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textAlignment="center"/>
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center">
 
-            </LinearLayout>
+                    <ImageView android:layout_width="@dimen/one_hundred"
+                        android:layout_height="@dimen/one_hundred"
+                        app:srcCompat="@mipmap/profile"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/main_profile_title" />
 
-        </com.google.android.material.card.MaterialCardView>
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/main_profile_title"
+                        android:textAppearance="?attr/textAppearanceHeadline6"
+                        android:textAlignment="center"/>
 
-    </androidx.gridlayout.widget.GridLayout>
+                </LinearLayout>
 
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </RelativeLayout>
 
 </RelativeLayout>
