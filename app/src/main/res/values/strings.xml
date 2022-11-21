@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name" translatable="false">TaxiApp</string>
+    <string name="location_permission">Location Permission</string>
+    <string name="explanation_location_permission">In order to offer the best map navigation service, we need access to the location of this device.</string>
+    <string name="allow">Allow</string>
+    <string name="cancel">Cancel</string>
     <string name="sign_up">Sign Up</string>
     <string name="login">Login</string>
     <string name="email">E-Mail</string>

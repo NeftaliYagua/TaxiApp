@@ -1,5 +1,9 @@
 <resources>
     <string name="email">E-Mail</string>
+    <string name="location_permission">Permisos de Ubicación</string>
+    <string name="explanation_location_permission">Con el fin de ofrecer el mejor servicio de navegación en el mapa, necesitamos el acceso a la ubicación  de este dispositivo.</string>
+    <string name="allow">Permitir</string>
+    <string name="cancel">Cancelar</string>
     <string name="sign_up">Regístrate</string>
     <string name="login">Acceder</string>
     <string name="password">Contraseña</string>
