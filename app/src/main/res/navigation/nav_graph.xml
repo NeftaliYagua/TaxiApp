@@ -11,10 +11,17 @@
         <action
             android:id="@+id/action_mainFragment_to_mapsFragment"
             app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_driversFragment"
+            app:destination="@id/driversFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/mapsFragment"
         android:name="com.example.taxiapp.ui.fragment.MapsFragment"
         android:label="MapsFragment" />
+    <fragment
+        android:id="@+id/driversFragment"
+        android:name="com.example.taxiapp.ui.fragment.DriversFragment"
+        android:label="DriversFragment" />
 </navigation>

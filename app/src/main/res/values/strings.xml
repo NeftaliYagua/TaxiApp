@@ -21,4 +21,6 @@
     <string name="main_map_description">Here you find the vehicles that circulate in the city.</string>
     <string name="main_menu_description">Here we offer you multiple options so you can find a taxi quickly.</string>
     <string name="logout">Logout</string>
+    <string name="available_drivers">Available Drivers</string>
+    <string name="search_driver">Search driver</string>
 </resources>

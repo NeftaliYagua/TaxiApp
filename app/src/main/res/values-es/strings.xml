@@ -20,4 +20,6 @@
     <string name="main_map_description">Aquí encuentras los vehículos que circulan en esta ciudad.</string>
     <string name="main_menu_description">Aquí te ofrecemos múltiples opciones para que puedas encontrar un taxi rápidamente.</string>
     <string name="logout">Cerrar Sesión</string>
+    <string name="available_drivers">Conductores Disponibles</string>
+    <string name="search_driver">Buscar conductor</string>
 </resources>
