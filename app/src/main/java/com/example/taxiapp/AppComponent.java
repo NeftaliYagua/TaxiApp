@@ -5,6 +5,8 @@ import com.example.taxiapp.module.AppModule;
 import com.example.taxiapp.module.FirebaseModule;
 import com.example.taxiapp.module.SubcomponentsModule;
 import com.example.taxiapp.registration.RegistrationComponent;
+import com.example.taxiapp.ui.fragment.DriversFragment;
+
 import dagger.BindsInstance;
 import dagger.Component;
 import javax.inject.Singleton;
@@ -23,4 +25,6 @@ public interface AppComponent {
     LoginComponent.Factory loginComponent();
 
     void inject(MainActivity activity);
+
+    void inject(DriversFragment fragment);
 }

@@ -1,44 +1,30 @@
 package com.example.taxiapp.entity;
 import androidx.annotation.NonNull;
-import org.json.JSONException;
-import org.json.JSONObject;
 import java.io.Serializable;
 import javax.mail.internet.InternetAddress;
 
 public class User implements Serializable {
 
-    private String uid;
-    private String email;
-    private String password;
-    private String photoURL;
-    private Person person;
+    private String uid = null;
+    private String name = null;
+    private String lastName = null;
+    private String birthDate = null;
+    private String email = null;
+    private String phone = null;
+    private ProfilePhoto photo = null;
+    private String role = null;
 
-    public User(){
-        uid = null;
-        email = null;
-        password = null;
-        photoURL = null;
-        person = null;
-    }
+    public User() {}
 
-    public User(JSONObject object) {
-        try {
-            uid = object.getString("uid");
-            email = object.getString("email");
-            password = object.getString("password");
-            photoURL = object.getString("photoURL");
-            person = new Person(object.getJSONObject("person"));
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public User(String uid, String email, String password, String photoURL, Person person) {
+    public User(String uid, String name, String lastName, String birthDate, String email, String phone, ProfilePhoto photo, String role) {
         this.uid = uid;
+        this.name = name;
+        this.lastName = lastName;
+        this.birthDate = birthDate;
         this.email = email;
-        this.password = password;
-        this.photoURL = photoURL;
-        this.person = person;
+        this.phone = phone;
+        this.photo = photo;
+        this.role = role;
     }
 
     public String getUid() {
@@ -49,6 +35,30 @@ public class User implements Serializable {
         this.uid = uid;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(String birthDate) {
+        this.birthDate = birthDate;
+    }
+
     public String getEmail() {
         return email;
     }
@@ -57,20 +67,28 @@ public class User implements Serializable {
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public String getPhotoURL() {
-        return photoURL;
+    public ProfilePhoto getPhoto() {
+        return photo;
     }
 
-    public void setPhotoURL(String photoURL) {
-        this.photoURL = photoURL;
+    public void setPhoto(ProfilePhoto photo) {
+        this.photo = photo;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 
     public static boolean isValidEmail(String email) {
@@ -89,8 +107,6 @@ public class User implements Serializable {
         return "{" +
                 "\"uid\":\"" + uid + "\"" +
                 ", \"email\":\"" + email + "\"" +
-                ", \"password\":\"" + password + "\"" +
-                ", \"photoURL\":\"" + photoURL + "\"" +
                 "}";
     }
 }
