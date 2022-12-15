@@ -19,7 +19,6 @@ public class FirestoreAdapter extends RecyclerView.Adapter<UserViewHolder> imple
 
     private static final String TAG = "Firestore Error";
     private final List<User> userList;
-    private Query query;
 
     public FirestoreAdapter(Query query) {
         this.userList = new ArrayList<>();

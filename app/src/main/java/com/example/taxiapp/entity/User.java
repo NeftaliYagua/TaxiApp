@@ -105,8 +105,14 @@ public class User implements Serializable {
     @Override
     public String toString() {
         return "{" +
-                "\"uid\":\"" + uid + "\"" +
-                ", \"email\":\"" + email + "\"" +
-                "}";
+                "\"uid\": \"" + uid + '"' +
+                ", \"name\": \"" + name + '"' +
+                ", \"lastName\": \"" + lastName + '"' +
+                ", \"birthDate\": \"" + birthDate + '"' +
+                ", \"email\": \"" + email + '"' +
+                ", \"phone\": \"" + phone + '"' +
+                ", \"photo\": " + photo +
+                ", \"role\": \"" + role + '"' +
+                '}';
     }
 }
