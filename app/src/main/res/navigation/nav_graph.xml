@@ -23,5 +23,13 @@
     <fragment
         android:id="@+id/driversFragment"
         android:name="com.example.taxiapp.ui.fragment.DriversFragment"
-        android:label="DriversFragment" />
+        android:label="DriversFragment" >
+        <action
+            android:id="@+id/action_driversFragment_to_driverFragment"
+            app:destination="@id/driverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/driverFragment"
+        android:name="com.example.taxiapp.ui.fragment.DriverFragment"
+        android:label="DriverFragment" />
 </navigation>
