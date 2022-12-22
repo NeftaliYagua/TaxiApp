@@ -23,4 +23,5 @@
     <string name="available_drivers">Conductores Disponibles</string>
     <string name="search_driver">Buscar conductor</string>
     <string name="profile_photo">Foto de Perfil</string>
+    <string name="select_another_photo">Seleccionar otra foto</string>
 </resources>

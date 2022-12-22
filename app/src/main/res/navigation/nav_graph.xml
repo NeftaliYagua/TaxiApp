@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_mainFragment_to_driversFragment"
             app:destination="@id/driversFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_myProfileFragment"
+            app:destination="@id/myProfileFragment" />
     </fragment>
 
     <fragment
@@ -32,4 +35,8 @@
         android:id="@+id/driverFragment"
         android:name="com.example.taxiapp.ui.fragment.DriverFragment"
         android:label="DriverFragment" />
+    <fragment
+        android:id="@+id/myProfileFragment"
+        android:name="com.example.taxiapp.ui.fragment.MyProfileFragment"
+        android:label="MyProfileFragment" />
 </navigation>

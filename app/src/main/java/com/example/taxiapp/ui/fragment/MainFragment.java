@@ -53,8 +53,10 @@ public class MainFragment extends Fragment implements View.OnClickListener{
         super.onViewCreated(view, savedInstanceState);
         MaterialCardView menuMaps = view.findViewById(R.id.mnu_map);
         MaterialCardView menuDrivers = view.findViewById(R.id.mnu_call);
+        MaterialCardView menuProfile = view.findViewById(R.id.mnu_profile);
         menuMaps.setOnClickListener(this);
         menuDrivers.setOnClickListener(this);
+        menuProfile.setOnClickListener(this);
     }
 
     @SuppressLint("NonConstantResourceId")
@@ -83,6 +85,10 @@ public class MainFragment extends Fragment implements View.OnClickListener{
             case R.id.mnu_call:
                 NavDirections action = MainFragmentDirections.actionMainFragmentToDriversFragment();
                 Navigation.findNavController(view).navigate(action);
+                break;
+
+            case R.id.mnu_profile:
+                Navigation.findNavController(view).navigate(MainFragmentDirections.actionMainFragmentToMyProfileFragment());
                 break;
         }
     }

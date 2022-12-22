@@ -24,4 +24,5 @@
     <string name="available_drivers">Available Drivers</string>
     <string name="search_driver">Search driver</string>
     <string name="profile_photo">Profile Photo</string>
+    <string name="select_another_photo">Select another photo</string>
 </resources>

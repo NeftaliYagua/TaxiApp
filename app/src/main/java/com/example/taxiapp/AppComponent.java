@@ -6,6 +6,7 @@ import com.example.taxiapp.module.FirebaseModule;
 import com.example.taxiapp.module.SubcomponentsModule;
 import com.example.taxiapp.registration.RegistrationComponent;
 import com.example.taxiapp.ui.fragment.DriversFragment;
+import com.example.taxiapp.ui.fragment.MyProfileFragment;
 
 import dagger.BindsInstance;
 import dagger.Component;
@@ -27,4 +28,6 @@ public interface AppComponent {
     void inject(MainActivity activity);
 
     void inject(DriversFragment fragment);
+
+    void inject(MyProfileFragment fragment);
 }

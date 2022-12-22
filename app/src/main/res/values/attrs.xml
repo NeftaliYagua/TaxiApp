@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Label">
+        <attr name="convertText" format="enum">
+            <enum name="textCapWords" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,6 +1,4 @@
 package com.example.taxiapp.module;
-import android.content.Context;
-import com.example.taxiapp.BaseApplication;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 import javax.inject.Singleton;
